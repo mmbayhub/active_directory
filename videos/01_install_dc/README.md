@@ -7,7 +7,19 @@
 
 2. Install the Active Directory Windows Feature
 
-...shell
+```shell
 Install-WindowsFeature AD-Domain_services -IncludeManagementTools
-...
+```
 
+
+```
+Get-NetIPAddress
+```
+
+# Joining the Workstation to the domain
+
+
+
+```
+Add-Computer -DomainName mblab.com -Credential mblab\Administrator -Force -Restart
+```
